@@ -13,6 +13,8 @@
 		493776DC2746975500509ED9 /* Comments.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 493776DA2746975500509ED9 /* Comments.storyboard */; };
 		493776DE2746975600509ED9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 493776DD2746975600509ED9 /* Assets.xcassets */; };
 		493776E12746975600509ED9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 493776DF2746975600509ED9 /* LaunchScreen.storyboard */; };
+		494BE7972746A181001D0087 /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494BE7962746A181001D0087 /* CommentCell.swift */; };
+		495E5A2A274789CD0007826D /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495E5A29274789CD0007826D /* Comment.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		493776DD2746975600509ED9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		493776E02746975600509ED9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		493776E22746975600509ED9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		494BE7962746A181001D0087 /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
+		495E5A29274789CD0007826D /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +122,7 @@
 		494BE79327469C96001D0087 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				494BE7962746A181001D0087 /* CommentCell.swift */,
 				493776DA2746975500509ED9 /* Comments.storyboard */,
 			);
 			path = View;
@@ -126,6 +131,7 @@
 		494BE79427469C9C001D0087 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				495E5A29274789CD0007826D /* Comment.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -210,9 +216,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				495E5A2A274789CD0007826D /* Comment.swift in Sources */,
 				493776D92746975500509ED9 /* CommentsViewController.swift in Sources */,
 				493776D52746975500509ED9 /* AppDelegate.swift in Sources */,
 				493776D72746975500509ED9 /* SceneDelegate.swift in Sources */,
+				494BE7972746A181001D0087 /* CommentCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

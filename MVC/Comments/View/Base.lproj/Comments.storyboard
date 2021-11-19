@@ -20,7 +20,7 @@
                                 <rect key="frame" x="0.0" y="44" width="390" height="766"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="227" id="nFP-8U-Sy7" customClass="e">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="227" id="nFP-8U-Sy7" customClass="CommentCell" customModule="MVC" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="44.666666030883789" width="390" height="227"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="nFP-8U-Sy7" id="fYW-Ep-0X4">
@@ -54,8 +54,16 @@
                                                 <constraint firstItem="kXb-cd-Sdi" firstAttribute="trailing" secondItem="fYW-Ep-0X4" secondAttribute="trailingMargin" id="pBC-5U-erU"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="label" destination="sk3-DH-0Hz" id="xMW-lS-ec5"/>
+                                            <outlet property="textView" destination="kXb-cd-Sdi" id="Ss3-p6-p6k"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="cIE-lS-uJa"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="sfM-Np-r9d"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
