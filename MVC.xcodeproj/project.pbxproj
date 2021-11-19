@@ -15,6 +15,8 @@
 		493776E12746975600509ED9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 493776DF2746975600509ED9 /* LaunchScreen.storyboard */; };
 		494BE7972746A181001D0087 /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494BE7962746A181001D0087 /* CommentCell.swift */; };
 		495E5A2A274789CD0007826D /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495E5A29274789CD0007826D /* Comment.swift */; };
+		495E5A2D27478EC10007826D /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495E5A2C27478EC10007826D /* NetworkService.swift */; };
+		495E5A30274795830007826D /* CommentNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495E5A2F274795830007826D /* CommentNetworkService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		493776E22746975600509ED9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		494BE7962746A181001D0087 /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
 		495E5A29274789CD0007826D /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		495E5A2C27478EC10007826D /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		495E5A2F274795830007826D /* CommentNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentNetworkService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,7 @@
 				494BE78D27469C1B001D0087 /* Model */,
 				494BE78E27469C21001D0087 /* View */,
 				494BE78F27469C27001D0087 /* Controller */,
+				495E5A2B27478E990007826D /* NetworkService */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -107,6 +112,7 @@
 				494BE79427469C9C001D0087 /* Model */,
 				494BE79327469C96001D0087 /* View */,
 				494BE79227469C8E001D0087 /* Controller */,
+				495E5A2E274795500007826D /* CommentNetworkService */,
 			);
 			path = Comments;
 			sourceTree = "<group>";
@@ -143,6 +149,22 @@
 				493776E22746975600509ED9 /* Info.plist */,
 			);
 			path = "Supporting files";
+			sourceTree = "<group>";
+		};
+		495E5A2B27478E990007826D /* NetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				495E5A2C27478EC10007826D /* NetworkService.swift */,
+			);
+			path = NetworkService;
+			sourceTree = "<group>";
+		};
+		495E5A2E274795500007826D /* CommentNetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				495E5A2F274795830007826D /* CommentNetworkService.swift */,
+			);
+			path = CommentNetworkService;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,7 +242,9 @@
 				493776D92746975500509ED9 /* CommentsViewController.swift in Sources */,
 				493776D52746975500509ED9 /* AppDelegate.swift in Sources */,
 				493776D72746975500509ED9 /* SceneDelegate.swift in Sources */,
+				495E5A2D27478EC10007826D /* NetworkService.swift in Sources */,
 				494BE7972746A181001D0087 /* CommentCell.swift in Sources */,
+				495E5A30274795830007826D /* CommentNetworkService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

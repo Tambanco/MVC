@@ -14,6 +14,8 @@ struct Comment {
     let email: String
     let body: String
     
+    
+    // MARK: - Failable Initializer
     init?(dict: [String: AnyObject]) {
         guard   let postId = dict["postId"] as? Int,
                 let id = dict["id"] as? Int,

@@ -20,24 +20,24 @@
                                 <rect key="frame" x="0.0" y="44" width="390" height="766"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="227" id="nFP-8U-Sy7" customClass="CommentCell" customModule="MVC" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="44.666666030883789" width="390" height="227"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="327" id="nFP-8U-Sy7" customClass="CommentCell" customModule="MVC" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.666666030883789" width="390" height="327"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="nFP-8U-Sy7" id="fYW-Ep-0X4">
-                                            <rect key="frame" x="0.0" y="0.0" width="390" height="227"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="390" height="327"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sk3-DH-0Hz">
-                                                    <rect key="frame" x="20" y="11" width="350" height="21"/>
+                                                    <rect key="frame" x="20" y="20" width="350" height="20"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="kXb-cd-Sdi">
-                                                    <rect key="frame" x="20" y="40" width="350" height="176"/>
+                                                    <rect key="frame" x="20" y="40" width="350" height="267"/>
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="176" id="VOx-25-xWa"/>
+                                                        <constraint firstAttribute="height" constant="267" id="6WB-YN-sDi"/>
                                                     </constraints>
                                                     <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                                     <color key="textColor" systemColor="labelColor"/>
@@ -46,12 +46,13 @@
                                                 </textView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="sk3-DH-0Hz" firstAttribute="leading" secondItem="fYW-Ep-0X4" secondAttribute="leadingMargin" id="7Br-b2-oSf"/>
-                                                <constraint firstItem="kXb-cd-Sdi" firstAttribute="leading" secondItem="fYW-Ep-0X4" secondAttribute="leadingMargin" id="Pat-wg-kAS"/>
-                                                <constraint firstItem="sk3-DH-0Hz" firstAttribute="trailing" secondItem="fYW-Ep-0X4" secondAttribute="trailingMargin" id="Weg-w9-NP6"/>
-                                                <constraint firstItem="sk3-DH-0Hz" firstAttribute="top" secondItem="fYW-Ep-0X4" secondAttribute="topMargin" id="jhm-Bl-IaS"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="kXb-cd-Sdi" secondAttribute="bottom" id="nDA-ix-Blj"/>
-                                                <constraint firstItem="kXb-cd-Sdi" firstAttribute="trailing" secondItem="fYW-Ep-0X4" secondAttribute="trailingMargin" id="pBC-5U-erU"/>
+                                                <constraint firstAttribute="bottom" secondItem="kXb-cd-Sdi" secondAttribute="bottom" constant="20" id="Bj8-3r-Uhc"/>
+                                                <constraint firstAttribute="trailing" secondItem="kXb-cd-Sdi" secondAttribute="trailing" constant="20" id="EXz-ib-kyl"/>
+                                                <constraint firstItem="kXb-cd-Sdi" firstAttribute="leading" secondItem="fYW-Ep-0X4" secondAttribute="leading" constant="20" id="Meo-7k-IlJ"/>
+                                                <constraint firstItem="sk3-DH-0Hz" firstAttribute="top" secondItem="fYW-Ep-0X4" secondAttribute="top" constant="20" id="Zlp-vb-V6N"/>
+                                                <constraint firstItem="sk3-DH-0Hz" firstAttribute="leading" secondItem="fYW-Ep-0X4" secondAttribute="leading" constant="20" id="dji-S8-eRs"/>
+                                                <constraint firstItem="kXb-cd-Sdi" firstAttribute="top" secondItem="sk3-DH-0Hz" secondAttribute="bottom" id="j3m-wU-Oas"/>
+                                                <constraint firstAttribute="trailing" secondItem="sk3-DH-0Hz" secondAttribute="trailing" constant="20" id="pfU-T0-6bf"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
